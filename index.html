@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        .container{
+            border: solid thick darkblue;
+        }
+        header{
+        
+            padding: 10px 200px;
+            margin: 60px 200px;
+            width: 33%;
+            text-align: center;
+            font-size: 50px;
+            color: darkmagenta;
+        }
+        h1{
+            color: darkmagenta;
+        }
+        form{
+          padding: 10px 200px;
+          margin: 30px 50px;
+        
+          
+        }
+        .form-group input{
+            width: 800px;
+            height: 30px;
+            margin: 8px;
+            font-size: 20px;
+            
+        }
+        button{
+            width: 800px;
+            height: 50px;
+            font-size: 25px;
+            background-color: rgb(84, 84, 160);
+            cursor: pointer;
+        
+       }
+        ::placeholder{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<style>
+    .container{
+        background-color: rgb(22, 170, 220);
+        display: grid;
+        place-items: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <header>
+            Big Storm
+        </header>
+        <h1>
+            Educational Website
+        </h1>
+        <h2>
+            Sign in and Shine More
+        </h2>
+        <form id="form">
+            <div class="form-group">
+                <input type="text" placeholder="Name" id="name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Email" id="email">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Password" id="password">
+            </div>
+             </form>
+        <button class="btn" onclick="signIn()">Sign in</button>
+        <div id="demo"></div>
+    </div>
+    <script src="BigStorm.js"></script>
+</body>
+</html>
